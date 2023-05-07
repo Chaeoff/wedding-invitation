@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
+@font-face {
+  font-family: sun;
+  src: local("sun"), url(/public/fonts/GowunBatang-Bold.ttf) format("ttf"),
+    local("sun") url(/public/fonts/GowunBatang-Regular.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
