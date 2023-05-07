@@ -6,7 +6,7 @@ const Map = () => {
 
   useEffect(() => {
     const $script = document.createElement("script");
-    $script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAOMAP_KEY}`;
+    $script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_KEY}`;
     $script.addEventListener("load", () => setMapLoaded(true));
     document.head.appendChild($script);
   }, []);
