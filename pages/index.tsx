@@ -1,18 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Calendar } from "../components/Calendar";
 import { ContactsModal } from "../components/ContactsModal";
 import { Layout } from "../components/Layout";
 import Map from "../components/Map";
 import { PhotoGallery } from "../components/PhotoGallery";
-import { Dday } from "../components/Dday";
+
+// TODO: og image 수정, Dday counter, 간격 수정, 폰트 아이폰 적용
 
 export default function Home() {
   const [openContact, setOpenContact] = useState(false);
   const [openBank1, setOpenBank1] = useState(false);
   const [openBank2, setOpenBank2] = useState(false);
+
   const cls = (...classname: string[]) => {
     return classname.join(" ");
   };
