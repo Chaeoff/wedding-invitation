@@ -33,7 +33,7 @@ export const Calendar = () => {
           >
             <span
               className={cls(
-                i === 1 ? "px-2 py-1 rounded-full bg-violet-300" : ""
+                i === 1 ? "px-3 py-1 rounded-full bg-violet-300" : ""
               )}
             >
               {i}
