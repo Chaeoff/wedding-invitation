@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <Layout>
         {openContact && <ContactsModal setOpenContact={setOpenContact} />}
-        <div className="flex flex-col font-batang h-auto w-full bg-[#d5d7ea] max-w-[430px] border items-center justify-center">
+        <div className="flex flex-col h-auto w-full bg-[#d5d7ea] max-w-[430px] border items-center justify-center">
           <div className="MAIN_IMAGE_TITLE relative flex w-full flex-col justify-start gap-y-8 items-center pb-8">
             <div className="absolute border w-[97%] h-[98%] inset-0 m-auto" />
             <Image

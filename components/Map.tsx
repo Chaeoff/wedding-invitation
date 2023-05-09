@@ -2,35 +2,35 @@ import React, { useEffect, useRef, useState } from "react";
 
 const Map = () => {
   const containerRef = useRef(null);
-  const [mapLoaded, setMapLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    const $script = document.createElement("script");
-    $script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_KEY}`;
-    $script.addEventListener("load", () => setMapLoaded(true));
-    document.head.appendChild($script);
-  }, []);
+    const mapScript = document.createElement("script");
 
-  useEffect(() => {
-    if (!mapLoaded) {
-      return;
-    }
-    const { kakao } = window;
-    const markerPosition = new kakao.maps.LatLng(
-      37.55911077784374,
-      126.98445827355191
-    );
-    const options = {
-      center: markerPosition,
-      level: 4,
+    mapScript.async = true;
+    mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_KEY}&autoload=false`;
+
+    document.head.appendChild(mapScript);
+
+    const onLoadKakaoMap = () => {
+      window.kakao.maps.load(() => {
+        const markerPosition = new window.kakao.maps.LatLng(
+          37.55911077784374,
+          126.98445827355191
+        );
+        const options = {
+          center: markerPosition,
+          level: 4,
+        };
+
+        let map = new window.kakao.maps.Map(containerRef.current, options);
+        new window.kakao.maps.Marker({
+          map,
+          position: markerPosition,
+        });
+      });
     };
-
-    let map = new kakao.maps.Map(containerRef.current, options);
-    new kakao.maps.Marker({
-      map,
-      position: markerPosition,
-    });
-  }, [containerRef, mapLoaded]);
+    mapScript.addEventListener("load", onLoadKakaoMap);
+  }, []);
 
   return (
     <div className="w-full h-full flex justify-center items-center">
