@@ -37,11 +37,11 @@ export default function Home() {
           content="https://hapro-yerin-wedding.com/og-image.jpg"
         ></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         {openContact && <ContactsModal setOpenContact={setOpenContact} />}
-        <div className="flex flex-col h-auto w-full bg-[#d5d7ea] max-w-[430px] border items-center justify-center">
+        <div className="flex flex-col h-auto w-full bg-[#dddfee] max-w-[430px] border items-center justify-center">
           <div className="MAIN_IMAGE_TITLE relative flex w-full flex-col justify-start gap-y-8 items-center pb-8">
             <div className="absolute border w-[97%] h-[98%] inset-0 m-auto" />
             <Image
@@ -64,11 +64,11 @@ export default function Home() {
               </div>
               <div className="SECOND_LINE py-5 gap-y-3 flex flex-col w-full items-center">
                 <span>2023년 7월 1일 토요일 오후 3시</span>
-                <span className="text-lg">라루체 4F 루아르홀</span>
+                <span>라루체 4F 루아르홀</span>
               </div>
             </div>
           </div>
-          <div className="UNTIL_MAP flex flex-col justify-start w-full items-center h-auto py-8">
+          <div className="UNTIL_MAP flex flex-col justify-start w-full items-center h-auto pt-8">
             <div className="flex flex-col items-center justify-center space-y-2">
               <span className="text-[#7196cb] tracking-widest text-sm">
                 INVITATION
@@ -98,19 +98,19 @@ export default function Home() {
                 <div className="flex flex-col justify-between gap-y-2  text-lg">
                   <div className="flex">
                     <span className="font-extrabold">강정숙</span>
-                    <span className="text-sm self-end pl-2">의</span>
+                    <span className="text-sm self-end pl-2 mb-[2px]">의</span>
                   </div>
                   <div className="flex">
                     <span className="font-extrabold">김재현</span>
-                    <span className="text-sm self-end pl-2">의</span>
+                    <span className="text-sm self-end pl-2 mb-[2px]">의</span>
                   </div>
                 </div>
                 <div className="flex flex-col justify-between items-center gap-y-2 text-lg">
                   <div className="flex items-end h-7">
-                    <span className="text-sm text-center">아들</span>
+                    <span className="text-sm text-center mb-[2px]">아들</span>
                   </div>
                   <div className="flex items-end h-7">
-                    <span className="text-sm text-center">딸</span>
+                    <span className="text-sm text-center mb-[2px]">딸</span>
                   </div>
                 </div>
                 <div className="flex flex-col justify-between gap-y-2 font-extrabold text-lg">
@@ -145,7 +145,7 @@ export default function Home() {
               <Calendar />
             </div>
           </div>
-          <div className="WHOLE_MAP w-full h-auto flex flex-col py-12 px-4">
+          <div className="WHOLE_MAP w-full h-auto flex flex-col py-14 px-4 border-black">
             <div className="flex flex-col items-center justify-center space-y-2 py-4">
               <span className="text-[#7196cb] text-sm tracking-widest">
                 LOCATION
@@ -155,7 +155,9 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2 py-4">
-              <span className="tracking-widest">라루체 4F 루아르홀</span>
+              <span className="tracking-widest opacity-70">
+                라루체 4F 루아르홀
+              </span>
               <span className="tracking-wide opacity-70">
                 서울 중구 퇴계로18길 46
               </span>
@@ -510,7 +512,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="pb-12 flex flex-col justify-center items-center">
+          <div className="pb-14 flex flex-col justify-center items-center">
             <span className="text-md pb-2 flex items-center text-[#446ea9]/70">
               축하 화환은 정중히 사양합니다.
             </span>

@@ -7,7 +7,7 @@ export const Calendar = () => {
   const dayArray = ["일", "월", "화", "수", "목", "금", "토"];
 
   return (
-    <div className="w-full grid grid-cols-7 text-center py-5 px-4">
+    <div className="w-full grid grid-cols-7 text-center px-4">
       {dayArray.map((i) => {
         return (
           <div
