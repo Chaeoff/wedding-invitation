@@ -546,6 +546,14 @@ export default function Home() {
           <div className="PHOTOS w-full">
             <PhotoGallery />
           </div>
+          <div className="w-full h-auto py-14">
+            <span className="text-md pb-2 flex justify-center items-center text-zinc-700 text-center">
+              저희 두 사람의 앞날을
+              <br /> 축복해주셔서 감사합니다.
+              <br /> 늘 건강하시고 뜻하시는 모든 일이
+              <br /> 형통하시길 바랍니다.
+            </span>
+          </div>
         </div>
       </Layout>
     </>
