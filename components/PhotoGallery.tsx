@@ -6,9 +6,9 @@ export const PhotoGallery = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const imageArray = [
     {
-      path: "1.JPG",
-      width: 3840,
-      height: 2301,
+      path: "1.jpg",
+      width: 3390,
+      height: 2073,
     },
     {
       path: "2.jpg",
@@ -31,12 +31,12 @@ export const PhotoGallery = () => {
       height: 3030,
     },
     {
-      path: "6.JPEG",
+      path: "6.jpeg",
       width: 2973,
       height: 3774,
     },
     {
-      path: "7.JPG",
+      path: "7.jpg",
       width: 2560,
       height: 3840,
     },
@@ -61,17 +61,17 @@ export const PhotoGallery = () => {
       height: 1870,
     },
     {
-      path: "12.JPG",
+      path: "12.jpg",
       width: 2560,
       height: 3840,
     },
     {
-      path: "13.JPEG",
+      path: "13.jpeg",
       width: 3840,
       height: 2559,
     },
     {
-      path: "14.JPG",
+      path: "14.jpg",
       width: 3840,
       height: 2560,
     },
