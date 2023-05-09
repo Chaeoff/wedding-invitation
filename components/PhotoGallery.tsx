@@ -11,9 +11,9 @@ export const PhotoGallery = () => {
       height: 2301,
     },
     {
-      path: "2.JPG",
+      path: "2.jpg",
       width: 2320,
-      height: 3840,
+      height: 2949,
     },
     {
       path: "3.jpg",
@@ -21,14 +21,14 @@ export const PhotoGallery = () => {
       height: 1829,
     },
     {
-      path: "4.JPEG",
-      width: 3126,
-      height: 3837,
+      path: "4.jpg",
+      width: 3124,
+      height: 2878,
     },
     {
-      path: "5.JPG",
-      width: 3093,
-      height: 3814,
+      path: "5.jpg",
+      width: 3090,
+      height: 3030,
     },
     {
       path: "6.JPEG",
@@ -46,7 +46,7 @@ export const PhotoGallery = () => {
       height: 3404,
     },
     {
-      path: "9.JPG",
+      path: "9.jpg",
       width: 2423,
       height: 3634,
     },
@@ -77,7 +77,7 @@ export const PhotoGallery = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-col justify-center bg-white/30 items-center relative gap-y-1">
+    <div className="w-full flex flex-col justify-center bg-white/30 items-center relative gap-y-4 px-3">
       <div className="flex flex-col items-center justify-center gap-y-2 pt-14 pb-6">
         <span className="text-[#7196cb] tracking-widest text-sm">GALLERY</span>
         <span className="text-[#446ea9] tracking-widest text-xl">갤러리</span>
