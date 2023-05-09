@@ -61,7 +61,7 @@ export const PhotoGallery = () => {
       height: 1870,
     },
     {
-      path: "p12.JPG",
+      path: "p12.jpg",
       width: 2560,
       height: 3840,
     },
