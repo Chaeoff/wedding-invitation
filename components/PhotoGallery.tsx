@@ -6,72 +6,72 @@ export const PhotoGallery = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const imageArray = [
     {
-      path: "1.jpg",
-      width: 3390,
-      height: 2073,
+      path: "p1.JPG",
+      width: 3840,
+      height: 2301,
     },
     {
-      path: "2.jpg",
+      path: "p2.jpg",
       width: 2320,
       height: 2949,
     },
     {
-      path: "3.jpg",
+      path: "p3.jpg",
       width: 3643,
       height: 1829,
     },
     {
-      path: "4.jpg",
+      path: "p4.jpg",
       width: 3124,
       height: 2878,
     },
     {
-      path: "5.jpg",
+      path: "p5.jpg",
       width: 3090,
       height: 3030,
     },
     {
-      path: "6.jpeg",
+      path: "p6.jpeg",
       width: 2973,
       height: 3774,
     },
     {
-      path: "7.jpg",
+      path: "p7.jpg",
       width: 2560,
       height: 3840,
     },
     {
-      path: "8.jpg",
+      path: "p8.jpg",
       width: 2246,
       height: 3404,
     },
     {
-      path: "9.jpg",
+      path: "p9.jpg",
       width: 2423,
       height: 3634,
     },
     {
-      path: "10.jpg",
+      path: "p10.jpg",
       width: 3671,
       height: 2447,
     },
     {
-      path: "11.jpg",
+      path: "p11.jpg",
       width: 1552,
       height: 1870,
     },
     {
-      path: "12.jpg",
+      path: "p12.JPG",
       width: 2560,
       height: 3840,
     },
     {
-      path: "13.jpeg",
+      path: "p13.jpeg",
       width: 3840,
       height: 2559,
     },
     {
-      path: "14.jpg",
+      path: "p14.jpg",
       width: 3840,
       height: 2560,
     },
